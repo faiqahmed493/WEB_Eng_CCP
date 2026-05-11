@@ -1,0 +1,210 @@
+/* .History {
+    padding: 50px;
+    background: #f5f7fb;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+
+.header h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.header p {
+    color: #6b7280;
+}
+
+
+.cardBlock {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+
+.card {
+    background: white;
+    width: 260px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+
+.score {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card p {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.card span {
+    font-size: 12px;
+    color: #9ca3af;
+} */
+
+.History {
+    padding: 40px;
+    background: #f5f7fb;
+
+    height: 100vh;
+    overflow-y: auto;
+
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+.header {
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+    color: #111827;
+}
+
+.header p {
+    color: #6b7280;
+    font-size: 15px;
+}
+
+/* CARD GRID */
+.cardBlock {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+
+    gap: 22px;
+    padding-bottom: 40px;
+}
+
+/* CARD */
+.card {
+    background: white;
+
+    border-radius: 18px;
+    padding: 20px;
+
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+
+    transition: 0.25s ease;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 320px;
+    max-height: 380px;
+
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+/* SCORE */
+.score {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2563eb;
+
+    margin-bottom: 12px;
+}
+
+/* TITLE */
+.card h3 {
+    margin: 10px 0;
+    color: #111827;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* FEEDBACK */
+.card p {
+    color: #6b7280;
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    overflow-y: auto;
+
+    margin-top: 10px;
+
+    flex: 1;
+
+    padding-right: 5px;
+
+    word-break: break-word;
+}
+
+/* DATE */
+.card span {
+    font-size: 12px;
+    color: #9ca3af;
+
+    margin-top: 15px;
+}
+
+/* SCROLLBAR */
+.card p::-webkit-scrollbar,
+.History::-webkit-scrollbar {
+    width: 6px;
+}
+
+.card p::-webkit-scrollbar-thumb,
+.History::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .History {
+        padding: 20px;
+    }
+
+    .cardBlock {
+        grid-template-columns: 1fr;
+    }
+
+}
+.empty {
+    width: 100%;
+    min-height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: #6b7280;
+}
+
+.empty h2 {
+    margin-bottom: 10px;
+    color: #111827;
+}
