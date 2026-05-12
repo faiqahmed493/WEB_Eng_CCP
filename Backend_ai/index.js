@@ -7,7 +7,11 @@ require('./conn')
 app.use(express.json())
 app.use(cors({
     credentials: true,
-    origin:"http://localhost:5173"
+    // origin:"http://localhost:5173"
+     origin: [
+        "http://localhost:5173",
+        "https://web-eng-ccp.vercel.app/"
+    ],
     }))
 
 const userRoutes = require('./Routes/user');
